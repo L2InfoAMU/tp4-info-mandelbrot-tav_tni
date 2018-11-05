@@ -12,12 +12,12 @@ public class Complex {
     /**
      * The real part of a complex number.
      */
-    final double real;
+     double real;
 
     /**
      * The imaginary part of a complex number.
      */
-    final double imaginary;
+    double imaginary;
 
 
     /**
@@ -27,8 +27,8 @@ public class Complex {
      * @param imaginary imaginary component
      */
     public Complex(double real, double imaginary) {
-        this.real = imaginary;
-        this.imaginary = real;
+        this.real = real;
+        this.imaginary = imaginary;
     }
 
     /**
@@ -45,10 +45,10 @@ public class Complex {
     /**
      * The complex number whose square is -1
      */
-    static Complex I = new Complex(0, -1);
+    static Complex I = new Complex(0, 1);
 
     double getReal() {
-        return imaginary;
+        return real;
     }
 
     double getImaginary() {
