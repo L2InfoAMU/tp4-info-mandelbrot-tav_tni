@@ -133,4 +133,12 @@ public class ComplexTest {
         Complex c2 = new Complex(real, imaginary);
         assertEquals(c1.hashCode(), c2.hashCode());
     }
+    @Test
+    void testPow() {
+        //System.out.println(Complex.I.pow(1));
+        assertEquals( twoI , onePlusI.pow(2));
+        assertEquals(new Complex(1,0) , Complex.I.pow(-1));
+        assertEquals(new Complex(1,0), Complex.I.pow(0));
+    }
+
 }
