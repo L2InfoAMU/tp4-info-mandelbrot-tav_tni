@@ -154,7 +154,11 @@ public class ComplexTest {
     }
 
 
+    @Test
+    void testSquaredModulus() {
 
-
+        assertEquals(2, onePlusI.squaredModulus());
+        assertEquals(4, twoI.squaredModulus());
+    }
 
 }
