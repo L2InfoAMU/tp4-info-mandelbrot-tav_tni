@@ -135,7 +135,7 @@ public class ComplexTest {
     }
     @Test
     void testPow() {
-        //System.out.println(Complex.I.pow(1));
+
         assertEquals( twoI , onePlusI.pow(2));
         assertEquals(new Complex(1,0) , Complex.I.pow(-1));
         assertEquals(new Complex(1,0), Complex.I.pow(0));
@@ -177,5 +177,12 @@ public class ComplexTest {
         assertEquals(true, new Complex(2,0).equals(two));
         assertNotEquals(true, new Complex(2,0).equals(2));
         assertNotEquals(true, new Complex(0,2).equals(two));
+    }
+
+    @Test
+    void testReal(){
+        double a = 2;
+         assertEquals(two, Complex.real(a));
+         assertNotEquals(a, Complex.real(a));
     }
 }
