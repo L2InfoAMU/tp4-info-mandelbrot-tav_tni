@@ -141,4 +141,15 @@ public class ComplexTest {
         assertEquals(new Complex(1,0), Complex.I.pow(0));
     }
 
+    @Test
+    void testScale() {
+        assertEquals(twoI, Complex.I.scale(2));
+        assertEquals(new Complex(-1,-1), onePlusI.scale(-1));
+    }
+
+
+
+
+
+
 }
